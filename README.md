@@ -44,3 +44,14 @@ python main.py
 ```
 
 ## Estructura del Proyecto
+
+El proyecto está organizado en los siguientes módulos:
+
+- **`main.py`**: Punto de entrada principal. Permite seleccionar entre el modo Gráfico (GUI) y el modo Consola (Terminal).
+- **`gui_crypto.py`**: Implementación de la interfaz gráfica de usuario utilizando `tkinter`. Contiene las visualizaciones de Alice, Bob y Eve.
+- **`primitivas_sin_llave.py`**: Módulo con demostraciones de funciones Hash (SHA-256, SHA-3), generadores aleatorios (CSPRNG) y pruebas de conocimiento cero.
+- **`cifrado_simetrico.py`**: Contiene la lógica para cifrado AES (modos CBC y ECB), ChaCha20, HMAC y derivación de claves (PBKDF2).
+- **`cifrado_asimetrico.py`**: Implementa funciones para RSA, firmas digitales, intercambio de claves y generación de certificados simulados.
+- **`ataques.py`**: Scripts que simulan vulnerabilidades y ataques, incluyendo fuerza bruta, debilidades del modo ECB y Man-in-the-Middle.
+- **`utils.py`**: Funciones auxiliares y utilidades compartidas (formateo hexadecimal, clases de usuario, etc.).
+- **`requirements.txt`**: Archivo de dependencias necesarias para instalar las librerías externas (`cryptography`, `pycryptodome`).
