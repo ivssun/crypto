@@ -109,40 +109,52 @@ def menu_principal():
         mostrar_banner()
         
         print("\n" + "="*70)
-        print("MENÚ PRINCIPAL")
+        print("DEMOSTRACIÓN DE PRIMITIVAS CRIPTOGRÁFICAS")
         print("="*70)
-        print("1. Primitivas sin uso de llaves")
-        print("2. Cifrado simétrico")
-        print("3. Cifrado asimétrico")
-        print("4. Ataques y vulnerabilidades")
-        print("5. Información del proyecto")
+        print("1. Interfaz Gráfica (GUI)")
+        print("2. Interfaz de Terminal")
         print("0. Salir")
-        print("="*70)
-        
-        opcion = input("\nSelecciona una opción: ")
-        
+    
+        opcion = input("\nSelecciona: ")
+    
         if opcion == "1":
-            limpiar_pantalla()
-            menu_primitivas()
+            import gui_crypto
+            gui_crypto.main()
         elif opcion == "2":
-            limpiar_pantalla()
-            menu_simetrico()
-        elif opcion == "3":
-            limpiar_pantalla()
-            menu_asimetrico()
-        elif opcion == "4":
-            limpiar_pantalla()
-            menu_ataques()
-        elif opcion == "5":
-            limpiar_pantalla()
-            mostrar_info()
-            input("\nPresiona Enter para volver al menú...")
-        elif opcion == "0":
-            print("\n¡Hasta luego!")
-            sys.exit(0)
-        else:
-            print("\npción inválida. Intenta de nuevo.")
-            input("\nPresiona Enter para continuar...")
+            print("MENÚ PRINCIPAL")
+            print("="*70)
+            print("1. Primitivas sin uso de llaves")
+            print("2. Cifrado simétrico")
+            print("3. Cifrado asimétrico")
+            print("4. Ataques y vulnerabilidades")
+            print("5. Información del proyecto")
+            print("0. Salir")
+            print("="*70)
+            
+            opcion = input("\nSelecciona una opción: ")
+            
+            if opcion == "1":
+                limpiar_pantalla()
+                menu_primitivas()
+            elif opcion == "2":
+                limpiar_pantalla()
+                menu_simetrico()
+            elif opcion == "3":
+                limpiar_pantalla()
+                menu_asimetrico()
+            elif opcion == "4":
+                limpiar_pantalla()
+                menu_ataques()
+            elif opcion == "5":
+                limpiar_pantalla()
+                mostrar_info()
+                input("\nPresiona Enter para volver al menú...")
+            elif opcion == "0":
+                print("\n¡Hasta luego!")
+                sys.exit(0)
+            else:
+                print("\npción inválida. Intenta de nuevo.")
+                input("\nPresiona Enter para continuar...")
 
 if __name__ == "__main__":
     try:
