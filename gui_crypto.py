@@ -560,7 +560,7 @@ class CryptoGUI:
             if hash_candidato == hash_objetivo:
                 fin = time.time()
                 self.attack_output.insert(tk.END, f"\n✓ ¡CONTRASEÑA ENCONTRADA: {candidato}!\n")
-                self.attack_output.insert(tk.END, f"✓ Tiempo: {fin - inicio:.2f} segundos\n")
+                self.attack_output.insert(tk.END, f"✓ Tiempo: {fin - inicio:.6f} segundos\n")
                 self.attack_output.insert(tk.END, f"✓ Intentos: {intentos}\n\n")
                 self.attack_output.insert(tk.END, "⚠️ LECCIÓN: Usa contraseñas largas y complejas\n")
                 self.attack_output.insert(tk.END, "⚠️ Una contraseña de 8 caracteres alfanuméricos\n")
