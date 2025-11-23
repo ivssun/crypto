@@ -37,7 +37,7 @@ def demo_csprng():
     import random
     random.seed(42)  # Semilla predecible
     print(f"\nRandom NO seguro (predecible): {random.randint(1000, 9999)}")
-    print("⚠️ NUNCA usar random.random() para criptografía")
+    print("NUNCA usar random.random() para criptografía")
 
 # 3. PRUEBA DE CONOCIMIENTO CERO (Zero-Knowledge Proof)
 def demo_zero_knowledge():
