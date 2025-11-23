@@ -33,8 +33,8 @@ def demo_fuerza_bruta():
             print(f"✓ Intentos: {intentos}")
             break
     
-    print("\n⚠️ Lección: Usa contraseñas largas y complejas")
-    print("⚠️ Una contraseña de 8 caracteres alfanuméricos = 218 trillones de combinaciones")
+    print("\nLección: Usa contraseñas largas y complejas")
+    print("Una contraseña de 8 caracteres alfanuméricos = 218 trillones de combinaciones")
 
 # 2. VULNERABILIDAD DEL MODO ECB
 def demo_ecb_vulnerability():
@@ -67,9 +67,9 @@ def demo_ecb_vulnerability():
         bloque = cifrado[i:i+16]
         print(f"Bloque {i//16 + 1}: {bloque.hex()}")
     
-    print("\n⚠️ ¡Todos los bloques cifrados son IDÉNTICOS!")
-    print("⚠️ Un atacante puede detectar patrones en el mensaje original")
-    print("⚠️ Solución: Usar modos CBC, CTR o GCM con IV aleatorio")
+    print("\n!Todos los bloques cifrados son IDÉNTICOS!")
+    print("Un atacante puede detectar patrones en el mensaje original")
+    print("Solución: Usar modos CBC, CTR o GCM con IV aleatorio")
 
 # 3. ATAQUE MAN-IN-THE-MIDDLE (Simulación)
 def demo_mitm():
@@ -91,7 +91,7 @@ def demo_mitm():
     print(f"[Eve] → '{mensaje_modificado}' → [Bob]")
     print(f"\n[Bob recibe]: '{mensaje_modificado}'")
     
-    print("\n⚠️ Bob cree que el mensaje es de Alice")
+    print("\nBob cree que el mensaje es de Alice")
     print("\n✓ Solución: Usar firmas digitales y certificados")
     print("✓ Con firma digital, Bob puede verificar la autenticidad")
     print("✓ Con PKI, Alice y Bob pueden verificar identidades")
