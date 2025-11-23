@@ -29,7 +29,7 @@ def demo_fuerza_bruta():
         if hash_candidato == hash_objetivo:
             fin = time.time()
             print(f"\n\n✓ ¡Contraseña encontrada: {candidato}!")
-            print(f"✓ Tiempo: {fin - inicio:.2f} segundos")
+            print(f"✓ Tiempo: {fin - inicio:.6f} segundos")
             print(f"✓ Intentos: {intentos}")
             break
     
