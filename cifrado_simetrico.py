@@ -28,7 +28,7 @@ def demo_cifrado_bloques():
     encryptor = cipher_ecb.encryptor()
     cifrado_ecb = encryptor.update(mensaje_padded) + encryptor.finalize()
     print(f"Cifrado ECB: {cifrado_ecb.hex()[:64]}...")
-    print("⚠️ ECB es inseguro: bloques idénticos producen cifrado idéntico")
+    print("ECB es inseguro: bloques idénticos producen cifrado idéntico")
     
     # Modo CBC (SEGURO)
     print("\n--- Modo CBC (Seguro) ---")
