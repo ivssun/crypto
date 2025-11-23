@@ -155,6 +155,13 @@ def menu_principal():
             else:
                 print("\npción inválida. Intenta de nuevo.")
                 input("\nPresiona Enter para continuar...")
+        
+        elif opcion == "0":
+            print("\n¡Hasta luego!")
+            sys.exit(0)
+        else:
+            print("\npción inválida. Intenta de nuevo.")
+            input("\nPresiona Enter para continuar...")
 
 if __name__ == "__main__":
     try:
