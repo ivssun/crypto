@@ -23,13 +23,13 @@ def mostrar_banner():
     banner = """
 ╔══════════════════════════════════════════════════════════════════╗
 ║                                                                  ║
-║        DEMOSTRACIÓN DE PRIMITIVAS CRIPTOGRÁFICAS                ║
+║        DEMOSTRACIÓN DE PRIMITIVAS CRIPTOGRÁFICAS                 ║
 ║                                                                  ║
 ║                         Eve (Atacante)                           ║
-║                              🦹                                  ║
+║                                                                  ║
 ║                              |                                   ║
 ║     Alice  ~~~~~~~~~~~~~~~~ Canal ~~~~~~~~~~~~~~~~  Bob          ║
-║       👩     <---- Comunicación Segura ---->     👨             ║
+║           <---- Comunicación Segura ---->                        ║
 ║                                                                  ║
 ║              Proyecto de Ciberseguridad 2025                     ║
 ╚══════════════════════════════════════════════════════════════════╝
@@ -90,7 +90,7 @@ def verificar_dependencias():
         import Crypto
         return True
     except ImportError:
-        print("\n⚠️  ERROR: Faltan dependencias requeridas")
+        print("\nERROR: Faltan dependencias requeridas")
         print("\nPor favor, instala las librerías necesarias:")
         print("  pip install cryptography pycryptodome")
         print("\nO usa el archivo requirements.txt:")
@@ -138,19 +138,19 @@ def menu_principal():
             mostrar_info()
             input("\nPresiona Enter para volver al menú...")
         elif opcion == "0":
-            print("\n¡Hasta luego! 👋")
+            print("\n¡Hasta luego!")
             sys.exit(0)
         else:
-            print("\n⚠️  Opción inválida. Intenta de nuevo.")
+            print("\npción inválida. Intenta de nuevo.")
             input("\nPresiona Enter para continuar...")
 
 if __name__ == "__main__":
     try:
         menu_principal()
     except KeyboardInterrupt:
-        print("\n\nPrograma interrumpido por el usuario. ¡Hasta luego! 👋")
+        print("\n\nPrograma interrumpido por el usuario. ¡Hasta luego!")
         sys.exit(0)
     except Exception as e:
-        print(f"\n⚠️  Error inesperado: {e}")
+        print(f"\nError inesperado: {e}")
         print("Por favor, reporta este error al desarrollador.")
         sys.exit(1)
